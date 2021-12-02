@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWESOME HTML TAGS</title>
+    <style>
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin-top: 3rem;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>AWESOME HTML TAGS</h1>
+    <hr />
+    <details>
+      <summary>Summary</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem aliquam
+        et voluptatibus sint voluptatem, quaerat dolorem enim autem reiciendis saepe blanditiis vel
+        praesentium, unde, suscipit rem quidem. Excepturi, nobis.
+      </p>
+    </details>
+    <hr />
+    <div>
+      <h3>Input types</h3>
+      color <input type="color" value="#f5cf0f" />
+      <br />
+      time <input type="time" />
+      <br />
+      range
+      <input
+        type="range"
+        value="3"
+        min="0"
+        max="10"
+        step=".5"
+        onchange="document.getElementById('rangeValue').innerText = this.value"
+        oninput="document.getElementById('rangeValue').innerText = this.value"
+      />
+      <label id="rangeValue"></label>
+      <br />
+    </div>
+    <hr />
+    <div>
+      <h3>Meter & Progress</h3>
+      <meter value="2" min="0" max="10" style="width: 15rem; height: 1.5rem">2</meter>
+      <br />
+      <progress></progress><br />
+      <progress value="5" max="10" style="width: 15rem; height: 1.5rem"></progress>
+    </div>
+    <hr />
+    <div>
+      <h3>Datalist</h3>
+      <input type="text" list="valueList" />
+      <datalist id="valueList">
+        <option>Movie</option>
+        <option>Book</option>
+        <option>Game</option>
+        <option>Sleep</option>
+        <option>Work</option>
+      </datalist>
+    </div>
+    <hr>
+    <div>
+        <h3>Optgroup</h3>
+        <select>
+            <optgroup label="Important">
+                <option>Movie</option>
+                <option>Book</option>
+                <option>Game</option>
+            </optgroup>
+            <optgroup label="Not important">
+                <option>Sleep</option>
+                <option>Work</option>
+            </optgroup>
+        </select>
+    </div>
+  </body>
+</html>
